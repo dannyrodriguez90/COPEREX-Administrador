@@ -5,9 +5,9 @@ import cors from "cors"
 import helmet from "helmet"
 import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
-/*import apiLimiter from "../src/middlewares/rate-limit-validator.js"
+import apiLimiter from "../src/middlewares/rate-limit-validator.js"
 import authRoutes from "../src/auth/auth.routes.js"
-import empresasRoutes from "../src/empresas/empresa.routes.js"*/
+import empresasRoutes from "../src/empresas/empresa.routes.js"
 
 
 const middlewares = (app) => {
@@ -16,7 +16,7 @@ const middlewares = (app) => {
     app.use(cors())
     app.use(helmet())
     app.use(morgan("dev"))
-   /*app.use(apiLimiter)*/
+   app.use(apiLimiter)
 }
 
 const conectarDB = async () =>{
@@ -29,8 +29,8 @@ const conectarDB = async () =>{
 }
 
 const routes = (app) => {
-    /*app.use("/coperex/v1/auth", authRoutes);
-    app.use("/coperex/v1/empresas", empresasRoutes);*/
+    app.use("/coperex/v1/auth", authRoutes);
+    app.use("/coperex/v1/empresas", empresasRoutes);
 }
 
 export const initServer = () => {
