@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67c09d738e8e9bbca637fa85"
+  },
+  "name": "Dannya",
+  "surname": "Rodrigueza",
+  "username": "dannyrodriguez90a",
+  "email": "fanyy@example.coma",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$lJKXf8qgdTaAiqC+pKRgfw$ezaB4i9rpRIXVZCzFQtVxcvwyiKP5JF6YwCWft1W6aY",
+  "profilePicture": null,
+  "phone": "12345678",
+  "role": "ADMIN_ROLE",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-27T17:14:27.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-27T17:14:27.405Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c0279d1c1dd02d4c59a8"
+  },
+  "name": "Juan",
+  "surname": "Perez",
+  "username": "juanperez",
+  "email": "juan.perez@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Ea+zxmO/cPZRpglbdz7IXg$DTI7cET+FFAjawPnlta5cBJqer1ce0YlHRBCNKJIchc",
+  "profilePicture": null,
+  "phone": "12345678",
+  "role": "ADMIN_ROLE",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T13:54:47.102Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T13:54:47.102Z"
+  }
+}]

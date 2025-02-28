@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "67c09e7c8e8e9bbca637fa89"
+  },
+  "nombre": "Empresa Ejemplo",
+  "nivelImpacto": "Alto",
+  "fechaCreacion": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "categoria": "Tecnología",
+  "email": "contacto@empresa.com",
+  "phone": "12345678",
+  "direccion": "Calle Falsa 123",
+  "createdAt": {
+    "$date": "2025-02-27T17:18:52.610Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-27T17:18:52.610Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c1b5cc64831d998a2ab1"
+  },
+  "nombre": "Empresa XYZ",
+  "nivelImpacto": "Alto",
+  "fechaCreacion": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "categoria": "Tecnología",
+  "email": "contacto@empresaxyz.com",
+  "phone": "87654321",
+  "direccion": "123 Calle Principal",
+  "createdAt": {
+    "$date": "2025-02-28T14:01:25.853Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:01:25.853Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c69256624bae9a3eadad"
+  },
+  "nombre": "Brazzer",
+  "nivelImpacto": "Alto",
+  "fechaCreacion": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "categoria": "Tecnología",
+  "email": "brazzer@empresaxyz.com",
+  "phone": "87654321",
+  "direccion": "123 Calle Principal",
+  "createdAt": {
+    "$date": "2025-02-28T14:22:10.591Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:22:10.591Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c95156624bae9a3eadba"
+  },
+  "nombre": "Empresa1",
+  "nivelImpacto": "Alto",
+  "fechaCreacion": {
+    "$date": "2020-01-01T00:00:00.000Z"
+  },
+  "categoria": "Tecnología",
+  "email": "empresas@empresaxyz.com",
+  "phone": "87654321",
+  "direccion": "123 Calle Principal",
+  "createdAt": {
+    "$date": "2025-02-28T14:33:53.840Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:33:53.840Z"
+  }
+}]
