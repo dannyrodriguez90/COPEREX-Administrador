@@ -155,13 +155,13 @@ export const generarExcelEmpresa = async (req, res) => {
             direccion: empresa.direccion
         });
 
-        const filePath = join(__dirname, '../../public', `empresa_${empresa._id}.xlsx`);
+        const filePath = join(__dirname, '../../reportes', `empresa_${empresa._id}.xlsx`);
         await workbook.xlsx.writeFile(filePath);
 
         res.status(200).json({
             success: true,
             message: 'Archivo Excel generado exitosamente',
-            filePath: `/public/empresa_${empresa._id}.xlsx`
+            filePath: `/reportes/empresa_${empresa._id}.xlsx`
         });
     } catch (error) {
         res.status(500).json({
