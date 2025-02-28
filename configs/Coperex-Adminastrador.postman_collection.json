@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "d9923e08-a2d7-4da1-993b-4b222394e357",
+		"name": "Coperex-Adminastrador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37589008"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Juan\",\r\n    \"surname\": \"Perez\",\r\n    \"username\": \"juanperez\",\r\n    \"email\": \"juan.perez@example.com\",\r\n    \"password\": \"Password123!\",\r\n    \"phone\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"juan.perez@example.com\",\r\n    \"password\": \"Password123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "empresas",
+			"item": [
+				{
+					"name": "agregarEmpresa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxYzAyNzlkMWMxZGQwMmQ0YzU5YTgiLCJpYXQiOjE3NDA3NTA5NTYsImV4cCI6MTc0MDc1NDU1Nn0.hUh4yU4kByDxrxr7qZFSchtzheX8IbCeFkOjCNZVFC0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Empresa XYZ\",\r\n    \"nivelImpacto\": \"Alto\",\r\n    \"fechaCreacion\": \"2020-01-01\",\r\n    \"categoria\": \"Tecnología\",\r\n    \"email\": \"contacto@empresaxyz.com\",\r\n    \"phone\": \"87654321\",\r\n    \"direccion\": \"123 Calle Principal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/empresas/crearEmpresa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"empresas",
+								"crearEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarEmpresa",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxYzAyNzlkMWMxZGQwMmQ0YzU5YTgiLCJpYXQiOjE3NDA3NTI5NTQsImV4cCI6MTc0MDc1NjU1NH0.FILlJ1CYn3yiLv3oOus7HudA_CJti4vCgZ_zonqWDbE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Empresa2\",\r\n    \"nivelImpacto\": \"Alto\",\r\n    \"fechaCreacion\": \"2020-01-01\",\r\n    \"categoria\": \"Tecnología\",\r\n    \"email\": \"empresa@empresaxyz.com\",\r\n    \"phone\": \"87654321\",\r\n    \"direccion\": \"123 Calle Principal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/empresas/actualizarEmpresa/67c1c6ac56624bae9a3eadaf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"empresas",
+								"actualizarEmpresa",
+								"67c1c6ac56624bae9a3eadaf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarEmpresa",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxYzAyNzlkMWMxZGQwMmQ0YzU5YTgiLCJpYXQiOjE3NDA3NTI5NTQsImV4cCI6MTc0MDc1NjU1NH0.FILlJ1CYn3yiLv3oOus7HudA_CJti4vCgZ_zonqWDbE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/empresas/eliminarEmpresa/67c1c6ac56624bae9a3eadaf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"empresas",
+								"eliminarEmpresa",
+								"67c1c6ac56624bae9a3eadaf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarEmpresaA-Z",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxYzAyNzlkMWMxZGQwMmQ0YzU5YTgiLCJpYXQiOjE3NDA3NTMyNjQsImV4cCI6MTc0MDc1Njg2NH0.3V_Cygv6Zqbd0fGHW_DzPIo9Y-2PKcKr2tATDp690Ng",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/empresas?sort=nombre:asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"empresas"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "nombre:asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarEmpresaZ-A",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxYzAyNzlkMWMxZGQwMmQ0YzU5YTgiLCJpYXQiOjE3NDA3NTMyNjQsImV4cCI6MTc0MDc1Njg2NH0.3V_Cygv6Zqbd0fGHW_DzPIo9Y-2PKcKr2tATDp690Ng",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/empresas?sort=nombre:desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"empresas"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "nombre:desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excel",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MxYzAyNzlkMWMxZGQwMmQ0YzU5YTgiLCJpYXQiOjE3NDA3NTMyNjQsImV4cCI6MTc0MDc1Njg2NH0.3V_Cygv6Zqbd0fGHW_DzPIo9Y-2PKcKr2tATDp690Ng",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/coperex/v1/empresas/generarExcel/67c1c95156624bae9a3eadba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"empresas",
+								"generarExcel",
+								"67c1c95156624bae9a3eadba"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
